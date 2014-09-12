@@ -5,7 +5,7 @@
 		<title>Hot or Cold</title>
 		<link rel="stylesheet" type="text/css" href="css/reset.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">	
-		<!-- <link href='http://fonts.googleapis.com/css?family=Lobster+Two:400,700italic,700|Roboto:700' rel='stylesheet' type='text/css'> -->
+		<link href='http://fonts.googleapis.com/css?family=Playball' rel='stylesheet' type='text/css'>
 		<script src="js/jquery-1.11.1.js"></script>
 		<script src="js/javascript.js"></script>
 	</head>
@@ -24,16 +24,24 @@
 						<p>If your guess isn't close to the hidden number, you get "Colder".</p>
 						<p>Simply put, the farther you are from the hiddden number, the colder you get and vice versa.</P>
 						<p>Enjoy!!!</p>
+						<input id="start" type="button" value="Play">
+
 					</div>
-					<div id="main">
-						<input id="userInput" type="text" name="" placeholder="Enter your guess">
-		                <div id="buttons">
-		                	<input id="submit" type="button" value="Go!">
-							<input id="newgame" type="button" value="New Game" placeholder="">
+					<div id="playgame">
+						<div id="main">
+							<input id="userInput" type="text" name="" placeholder="Enter your guess">
+			                <div id="buttons">
+			                	<input id="submit" type="button" value="Go!">
+								<input id="newgame" type="button" value="New Game" placeholder="">
+							</div>
 						</div>
-						<div id="comment">
-							<span id="error"></span>
-							<span id="feedback"></span>
+						<div id="progressbarwrapper">
+							<div id="progressbar"></div>
+						</div>
+							<div id="comment">
+								<span id="error"></span>
+								<span id="feedback"></span>
+							</div>
 						</div>
 					</div>
 				</div>

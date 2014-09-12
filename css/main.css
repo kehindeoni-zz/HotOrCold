@@ -1,14 +1,22 @@
+body{
+	/*height: 100%;*/
+	background: url("../img/backimage1.jpg") no-repeat center/ cover;
+}
+
+html {
+	height: 100%;
+}
+
 #wrapper {
-	background: url("../img/backimage1.jpg") no-repeat center center fixed;
 	width: 100%;
 	height: 100%;
 	background-size: 100% 100%;
-	margin: 3% 0% 0% 0%;
-	line-height: 1.7em;
+	margin: 2% 0% 0% 0%;
+	line-height: 1em;
 }
 
 header{
-	padding-bottom: 20px;
+	padding-bottom: 70px;
 }
 
 section {
@@ -17,10 +25,10 @@ section {
 
 header h2 {
 	font-size: 5em;
-	font-weight: 600;
-	font-family: Tahoma;
+	font-family: 'Playball', cursive;
 	text-align: center;
 	color: #C19A6B;
+	line-height: 0.8em;
 }
 
 
@@ -31,26 +39,40 @@ header h2 {
 	font-style: italic;
 	margin: auto auto;
 	padding: 20px;
-
+	background: rgba(0,0,0,0.6);	
 }
 
+
 #rules h2 {
-	font-style: italic;
-	font-size: 3em;
+	font-size: 2em;
 	padding: 15px 0px;
 	font-weight: bold;
+
 }
 
 #rules p {
-	font-size: 1.1em;
+	font-size: 1.2em;
 	padding: 5px;
-	font-weight: bold;
 }
+
+
+#start {
+	border: none;
+	border-radius: 2px;
+	padding: 10px;
+	font-size: 1.2em;
+	color: white;
+}
+
+
+
+
 
 #main {
 	text-align: center;
 	display: block;
 	padding: 10px;
+	margin-top: 80px; 
 }
 
 #main h2 {
@@ -74,24 +96,58 @@ input[type="text"]{
 #buttons input {
 	border: none;
 	border-radius: 5px;
-	background-color: green;
+	background-color: #0090CA;
 	padding: 15px;
 	font-size: 1.2em;
 	color: white;
 }
 
 #comment {
-	margin: 20px auto;
-	width: 30%;
+	margin: 20px auto 0%;
+	width: 40%;
 	border: none;
-	border-radius: 5px;
-	background-color: green;
+	border-radius: 15px;
+	background-color: #0090CA;
 	padding: 15px;
 	font-size: 2em;
-	
+	opacity: 0.8;
+	text-align: center;
 }
 
 #error, #feedback {
 	color: white;
 	font-size: 0.8em;
 }
+
+#progressbarwrapper {
+	width: 4%;
+	height: 400px;
+	position: absolute;
+	right: 0;
+	border: 1px solid #0090CA;
+	float: right;
+	margin-right: 250px;
+	margin-top: -250px;
+	border-radius: 20px 0px;
+}
+
+#progressbar {
+	height: 0%;
+	width: 100%;
+	background: red;
+	bottom: 0;
+	position: absolute;
+	border-radius: 20px 0px;
+}
+
+#start {
+	color: black;
+}
+
+#start:hover {
+	background-color: #d1d1d1; color:#fff
+}
+
+
+
+
